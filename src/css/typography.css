@@ -11,3 +11,7 @@
 	src: url(../fonts/OpenSans-Bold.ttf);
 	font-weight: bold;
 }
+
+* {
+	font-family: "Open Sans", sans-serif;
+}

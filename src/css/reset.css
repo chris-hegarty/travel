@@ -1,4 +1,4 @@
-/* This file contains normalize CSS, with some custom resets. */
+/* This file contains code from Normalize CSS, Josh Comeau's CSS resets, and some custom resets. */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -365,10 +365,13 @@ html {
 }
 
 /* From Josh Comeau Resets. https://www.joshwcomeau.com/css/custom-css-reset/ */
-html,
+
+/* These html and body resets are moved to index.css.     */
+
+/* html,
 body {
 	height: 100%;
-}
+} */
 
 img,
 picture,

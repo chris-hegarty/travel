@@ -1,0 +1,56 @@
+/* Reusable classes: */
+
+.flex {
+	display: flex;
+}
+.column {
+	flex-direction: column;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.center {
+	justify-content: center;
+}
+.align-center {
+	align-items: center;
+}
+.flex-start {
+	justify-content: flex-start;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.space-between {
+	justify-content: space-between;
+}
+.space-around {
+	justify-content: space-around;
+}
+.space-evenly {
+	justify-content: space-evenly;
+}
+.flex-grow-1 {
+	flex-grow: 1;
+}
+.basis-33 {
+	flex-basis: calc((100% / 3) - 40px);
+}
+.basis-50 {
+	flex-basis: 50%;
+}
+.basis-66 {
+	flex-basis: calc(((100% / 3) * 2) - 40px);
+}
+
+/* Color variables: */
+
+html {
+	--wheat: #f1dbb4;
+	--tangelo: #f57638;
+	--salsa: #eb1e28;
+	--osmteal: #4fc181;
+	--myrtle: #307979;
+	--anchor: #393939;
+	--onyx: #000101;
+}
