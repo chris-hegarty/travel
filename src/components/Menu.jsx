@@ -15,16 +15,16 @@ function Menu() {
 				<div>
 					<ul>
 						<li>
-							<NavLink>Travel Jobs</NavLink>
+							<NavLink to="/traveljobs">Travel Jobs</NavLink>
 						</li>
 						<li>
-							<NavLink>Benefits</NavLink>
+							<NavLink to="/benefits">Benefits</NavLink>
 						</li>
 						<li>
-							<NavLink>About</NavLink>
+							<NavLink to="/about">About</NavLink>
 						</li>
 						<li>
-							<NavLink>Blog</NavLink>
+							<NavLink to="/blogpage">Blog</NavLink>
 						</li>
 						<li>
 							<NavLink>{BsSearch}</NavLink>
