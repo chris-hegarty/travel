@@ -1,0 +1,37 @@
+/* Header styles:  */
+
+.header-logo {
+	width: 200px;
+}
+.header-nav {
+	padding: 20px;
+}
+header ul {
+	gap: 40px;
+}
+
+header a {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: #59606d;
+}
+header .header-search-icon svg {
+	fill: var(--teal);
+	font-size: 1.125rem;
+}
+header .user-circle svg {
+	fill: var(--teal);
+	height: 29px;
+	width: 29px;
+}
+
+.logo-container {
+	flex-basis: 20%;
+}
+.top-menu-items {
+	flex-basis: 60%;
+	flex-grow: 1;
+}
+.user-circle {
+	flex-basis: 20%;
+}

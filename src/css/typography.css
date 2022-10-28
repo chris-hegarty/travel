@@ -11,7 +11,13 @@
 	src: url(../fonts/OpenSans-Bold.ttf);
 	font-weight: bold;
 }
+@font-face {
+	font-family: Open Sans;
+	src: url(../fonts/OpenSans-Semibold.ttf);
+	font-weight: semi-bold;
+}
 
 * {
 	font-family: "Open Sans", sans-serif;
+	color: #444a53;
 }
