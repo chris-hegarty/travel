@@ -1,4 +1,5 @@
 import React from "react";
+import BlogCard from "./BlogCard";
 
 function Home() {
 	return (
@@ -50,6 +51,7 @@ function Home() {
 					{/* Ideally, we dynamically map through and output three BlogCard components with the three latest blog
 					posts here. */}
 					<h2>Check Out Our Blog</h2>
+					{<BlogCard />}
 				</section>
 			</main>
 		</>

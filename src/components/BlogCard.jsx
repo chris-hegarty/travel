@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegEye } from "react-icons/fa";
-import { FiStar } from "react-icons/fa";
+import { FiStar } from "react-icons/fi";
 
 function BlogCard() {
 	return (

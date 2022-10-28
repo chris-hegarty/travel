@@ -1,0 +1,13 @@
+@font-face {
+	font-family: FagoCo;
+	src: url(../fonts/FagoCo-Black.otf);
+}
+@font-face {
+	font-family: Open Sans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: Open Sans;
+	src: url(../fonts/OpenSans-Bold.ttf);
+	font-weight: bold;
+}
