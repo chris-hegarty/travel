@@ -25,11 +25,11 @@ function Home() {
 							fugiat nulla pariatur.
 						</p>
 					</div>
-					<div>
-						<div>
-							<img src="" alt="" />
+					<section className="travel-friends">
+						<div className="friends-col-1">
+							<img src="../../images/friends.webp" alt="" />
 						</div>
-						<div>
+						<div className="friends-col-2">
 							<h3>Travel with Your Friends</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -45,12 +45,14 @@ function Home() {
 							</p>
 							<button>Refer Someone Now!</button>
 						</div>
-					</div>
+					</section>
 				</section>
 				<section className="blog-row">
 					{/* Ideally, we dynamically map through and output three BlogCard components with the three latest blog
 					posts here. */}
-					<h2>Check Out Our Blog</h2>
+					<div className="flex center">
+						<h2>Check Out Our Blog</h2>
+					</div>
 					{<BlogCard />}
 				</section>
 			</main>

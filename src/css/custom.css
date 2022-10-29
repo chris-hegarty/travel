@@ -1,7 +1,7 @@
 /* Body styles  */
 
 section {
-	padding: 0 40px;
+	padding: 40px;
 }
 
 /* Header styles:  */
@@ -52,4 +52,22 @@ header .user-circle svg {
 .hero-image h1 {
 	padding: 90px 0;
 	color: #fff;
+}
+
+.travel-friends {
+	display: flex;
+	gap: 100px;
+}
+.friends-col-1 {
+	flex-basis: calc(50% - 25px);
+}
+.friends-col-2 {
+	flex-basis: calc(50% - 25px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.friends-col-1 img {
+	border-radius: 10px;
 }
