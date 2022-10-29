@@ -5,9 +5,9 @@ function Home() {
 	return (
 		<>
 			<main>
-				<section className="hero-image">
+				<div className="hero-image flex center align-center">
 					<h1>We. Are. OneStaff.</h1>
-				</section>
+				</div>
 				<section className="content home-content">
 					<div>
 						<h2>Why Travel With Us?</h2>

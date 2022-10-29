@@ -1,3 +1,9 @@
+/* Body styles  */
+
+section {
+	padding: 0 40px;
+}
+
 /* Header styles:  */
 
 .header-logo {
@@ -7,7 +13,7 @@
 	padding: 20px;
 }
 header ul {
-	gap: 40px;
+	gap: 48px;
 }
 
 header a {
@@ -34,4 +40,17 @@ header .user-circle svg {
 }
 .user-circle {
 	flex-basis: 20%;
+}
+
+/* Top hero image:  */
+
+.hero-image {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+		url("../../public/images/vw-teal-hand-outside-window.png") no-repeat center
+			30%/100%;
+}
+.hero-image h1 {
+	padding: 90px 0;
+	font-size: 5.25rem;
+	color: #fff;
 }
