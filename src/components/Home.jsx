@@ -9,7 +9,7 @@ function Home() {
 					<h1>We. Are. OneStaff.</h1>
 				</div>
 				<section className="content home-content">
-					<div>
+					<div className="flex column center align-center">
 						<h2>Why Travel With Us?</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

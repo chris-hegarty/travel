@@ -24,6 +24,8 @@ html {
 
 body {
 	margin: 0;
+	margin-block-start: 0;
+	margin-start-end: 0;
 }
 
 /**

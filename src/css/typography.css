@@ -8,16 +8,35 @@
 }
 @font-face {
 	font-family: Open Sans;
-	src: url(../fonts/OpenSans-Bold.ttf);
-	font-weight: bold;
+	src: url(../fonts/OpenSans-Semibold.ttf);
+	font-weight: semi-bold;
 }
 @font-face {
 	font-family: Open Sans;
-	src: url(../fonts/OpenSans-Semibold.ttf);
-	font-weight: semi-bold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+	font-weight: bold;
 }
 
 * {
 	font-family: "Open Sans", sans-serif;
 	color: #444a53;
+}
+
+p {
+	font-size: clamp(1rem, 1.5vw, 1.5rem);
+	line-height: 28px;
+}
+h1 {
+	font-size: clamp(2rem, 5vw, 5.25rem);
+}
+
+h2 {
+	font-size: clamp(1.75rem, calc(2.75 / 80 * 100vw), 2.75rem);
+}
+
+h3 {
+	font-size: clamp(1.25rem, calc(2.125 / 80 * 100vw), 2.125rem);
+}
+h4 {
+	font-size: 1.375rem;
 }
