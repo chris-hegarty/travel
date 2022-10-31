@@ -4,6 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ErrorBoundary from "./ErrorBoundary";
+import "./fonts/FagoCo-Black.otf";
+import "./fonts/OpenSans-Bold.ttf";
+import "./fonts/OpenSans-Light.ttf";
+import "./fonts/OpenSans-Regular.ttf";
+import "./fonts/OpenSans-Semibold.ttf";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

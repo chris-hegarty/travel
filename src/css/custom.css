@@ -4,13 +4,24 @@ section {
 	padding: 40px;
 }
 
+/* Button styles */
+
+button {
+	border-radius: 25px;
+	padding: 10px 20px;
+	border: none;
+	box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
+	font-weight: bold;
+}
+
 /* Header styles:  */
 
 .header-logo {
 	width: 200px;
 }
 .header-nav {
-	padding: 20px;
+	padding: 16px;
 }
 header ul {
 	gap: 48px;
@@ -54,9 +65,14 @@ header .user-circle svg {
 	color: #fff;
 }
 
+/* Home page sections:  */
+
 .travel-friends {
 	display: flex;
 	gap: 100px;
+}
+.why-travel p {
+	padding: 0 100px;
 }
 .friends-col-1 {
 	flex-basis: calc(50% - 25px);
@@ -67,7 +83,57 @@ header .user-circle svg {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 40px;
+}
+.friends-col-2 h3 {
+	margin: 0;
 }
 .friends-col-1 img {
 	border-radius: 10px;
+}
+
+/* Footer styles:  */
+footer {
+	box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.footer-headline {
+	gap: 10px;
+}
+h2.footer-h2 {
+	font-family: "FagoCo-Black", sans-serif;
+	font-size: 2.5rem;
+}
+footer h3 {
+	font-size: 1.375rem;
+}
+.footer-column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.footer-column ul {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.footer-column li {
+	font-size: 12px;
+}
+footer a {
+	color: #444a53;
+}
+.has-logos li {
+	gap: 10px;
+}
+.footer-nav {
+	gap: 100px;
+}
+.copyright-text {
+	font-size: 10px;
+	color: rgba(152, 188, 188, 1);
+}
+.copyright-line a {
+	text-transform: uppercase;
+	color: rgba(152, 188, 188, 1);
 }

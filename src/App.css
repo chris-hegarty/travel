@@ -2,7 +2,3 @@
 @import url("./css/typography.css");
 @import url("./css/utility.css");
 @import url("./css/custom.css");
-
-* {
-	font-family: "Open Sans", sans-serif;
-}
