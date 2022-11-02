@@ -26,12 +26,13 @@ function Home() {
 						</p>
 					</div>
 					<section className="travel-friends">
-						<div className="friends-col-1">
-							<img src="../../images/friends.webp" alt="" />
+						<div className="friends-col-1 flex column align-center">
+							<h3 className="mobile-headline">Travel with Your Friends</h3>
+							<img src="../../images/friends.webp" alt="Photo of friends." />
 						</div>
 						<div className="friends-col-2">
-							<h3>Travel with Your Friends</h3>
-							<p>
+							<h3 className="desktop-headline">Travel with Your Friends</h3>
+							<p className="p-small">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 								eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
 								metus nec fringilla accumsan, risus sem sollicitudin lacus, ut

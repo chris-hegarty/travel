@@ -11,13 +11,12 @@ function Footer() {
 						<img
 							src="../../OSM-assets/osm-waves-light-logo.png"
 							alt="OneStaff Medical Waves photo"
-							width="47px"
 						/>
 					</span>
 					<h2 className="footer-h2">We. Are. OneStaff.</h2>
 				</div>
 				<nav className="flex center footer-nav">
-					<div className="footer-column">
+					<div className="footer-column no-mobile">
 						<h3>Overview</h3>
 						<ul>
 							<li>
@@ -37,7 +36,7 @@ function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className="footer-column">
+					<div className="footer-column no-mobile">
 						<h3>Explore</h3>
 						<ul>
 							<li>
@@ -57,79 +56,161 @@ function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className="footer-column has-logos">
+					<div className="footer-column has-logos socials desktop-socials">
 						<h3>Follow</h3>
 						<ul>
-							<li className="flex align-center">
-								<img
-									src="../../social-icons/Instagram_Glyph_Gradient.png"
-									alt="Instagram logo"
-									width="24px"
-								/>
-								<NavLink to="#">Instagram</NavLink>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/Instagram_Glyph_Gradient.png"
+										alt="Instagram logo"
+										width="24px"
+									/>
+									Instagram
+								</NavLink>
 							</li>
-							<li className="flex align-center">
-								<img
-									src="../../social-icons/f_logo_RGB-Blue_512.png"
-									alt="Facebook logo"
-									width="24px"
-								/>
-								<NavLink to="#">Facebook</NavLink>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/f_logo_RGB-Blue_512.png"
+										alt="Facebook logo"
+										width="24px"
+									/>
+									Facebook
+								</NavLink>
 							</li>
-							<li className="flex align-center">
-								<img
-									src="../../social-icons/2021 Twitter logo - blue.png"
-									alt="Twitter logo"
-									width="24px"
-								/>
-								<NavLink to="#">Twitter</NavLink>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/2021 Twitter logo - blue.png"
+										alt="Twitter logo"
+										width="24px"
+									/>
+									Twitter
+								</NavLink>
 							</li>
-							<li className="flex align-center">
-								<img
-									src="../../social-icons/TikTok_Icon_Black_Circle.png"
-									alt="TikTok logo"
-									width="24px"
-								/>
-								<NavLink to="#">TikTok</NavLink>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/TikTok_Icon_Black_Circle.png"
+										alt="TikTok logo"
+										width="24px"
+									/>
+									TikTok
+								</NavLink>
 							</li>
-							<li className="flex align-center">
-								<img
-									src="../../social-icons/In-Blue-128.png"
-									alt="LinkedIn logo"
-									width="24px"
-								/>
-								<NavLink to="#">LinkedIn</NavLink>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/In-Blue-128.png"
+										alt="LinkedIn logo"
+										width="24px"
+									/>
+									LinkedIn
+								</NavLink>
+							</li>
+						</ul>
+					</div>
+					{/* -------------Begin Mobile logo row:------------  */}
+
+					<div className="footer-column has-logos mobile-socials">
+						<h3>Follow</h3>
+						<ul>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/Instagram_Glyph_Gradient.png"
+										alt="Instagram logo"
+										width="24px"
+									/>
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/f_logo_RGB-Blue_512.png"
+										alt="Facebook logo"
+										width="24px"
+									/>
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/2021 Twitter logo - blue.png"
+										alt="Twitter logo"
+										width="24px"
+									/>
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/TikTok_Icon_Black_Circle.png"
+										alt="TikTok logo"
+										width="24px"
+									/>
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="#" className="flex align-center">
+									{" "}
+									<img
+										src="../../social-icons/In-Blue-128.png"
+										alt="LinkedIn logo"
+										width="24px"
+									/>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
 
-					<div className="footer-column has-logos">
+					<div className="footer-column has-logos no-mobile">
 						<h3>Seals of Approval</h3>
 						<ul>
 							<li className="flex align-center">
-								<img
-									src="../../seals-of-approval/Joint-Commission-Accreditation.png"
-									alt="Joint Commission Accreditation logo"
-									width="24px"
-								/>
-								<NavLink to="#">Joint Commission</NavLink>
+								<NavLink to="#" className="flex align-center">
+									<img
+										src="../../seals-of-approval/Joint-Commission-Accreditation.png"
+										alt="Joint Commission Accreditation logo"
+										width="24px"
+									/>
+									Joint Commission
+								</NavLink>
 							</li>
 							<li className="flex align-center">
-								<img
-									src="../../seals-of-approval/MinorityOwnedBusiness-1.jpg"
-									alt="Minority Owned Business Enterprise logo"
-									width="24px"
-								/>
-								<NavLink to="#">Minority Business Enterprise</NavLink>
+								<NavLink to="#" className="flex align-center">
+									<img
+										src="../../seals-of-approval/MinorityOwnedBusiness-1.jpg"
+										alt="Minority Owned Business Enterprise logo"
+										width="24px"
+									/>
+									Minority Business Enterprise
+								</NavLink>
 							</li>
 						</ul>
 					</div>
 				</nav>
-				<div className="copyright-line flex center">
+				<div className="copyright-line flex center copyright-desktop">
 					<p className="copyright-text">
 						Site Hosted by OneStaffMedical.com&#174; &copy; Copyright by: One
 						Staff Medical {year}. <NavLink to="#">Privacy Statement</NavLink> |
 						<NavLink to="#">Terms of Use</NavLink>. All Rights Reserved.
+					</p>
+				</div>
+				<div className="copyright-line flex center copyright-mobile">
+					<p className="copyright-text">
+						<NavLink to="#">Privacy Statement</NavLink> |
+						<NavLink to="#">Terms of Use</NavLink>
 					</p>
 				</div>
 			</footer>
