@@ -1,0 +1,71 @@
+/* This file contains minimal base styling for each component. */
+/* Components should receive more specific styling where they are used.  */
+
+/* Star component;  */
+
+.rating-container {
+	display: flex;
+	gap: 8px;
+	padding: 16px 0;
+}
+.rating-container svg {
+	fill: var(--tangelo);
+	width: 15px;
+}
+
+/* Views component:  */
+.views-container {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.views-number {
+	margin: 0;
+}
+
+/* Comments Counter component:  */
+.comments-counter {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.comments-number {
+	margin: 0;
+}
+
+/* Byline component:  */
+
+.byline {
+	display: flex;
+	gap: 0.3rem;
+}
+
+/* Create blog form:  */
+
+.blog-form button {
+	display: inline-block;
+}
+
+.columns-wrap {
+	gap: 80px;
+}
+
+.blog-form .left-column {
+	flex-basis: calc(50% - 40px);
+}
+
+.blog-form .right-column {
+	flex-basis: calc(50% - 40px);
+}
+.left-column,
+.right-column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.create-field {
+	gap: 10px;
+}
+.publish {
+	margin-top: 40px;
+}

@@ -9,11 +9,14 @@ import "./fonts/OpenSans-Bold.ttf";
 import "./fonts/OpenSans-Light.ttf";
 import "./fonts/OpenSans-Regular.ttf";
 import "./fonts/OpenSans-Semibold.ttf";
+import { BlogProvider } from "./context/BlogContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<ErrorBoundary>
-		<App />
+		<BlogProvider>
+			<App />
+		</BlogProvider>
 	</ErrorBoundary>,
 );
 

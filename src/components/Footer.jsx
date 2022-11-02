@@ -10,7 +10,7 @@ function Footer() {
 					<span>
 						<img
 							src="../../OSM-assets/osm-waves-light-logo.png"
-							alt="OneStaff Medical Waves photo"
+							alt="OneStaff Medical Waves logo."
 						/>
 					</span>
 					<h2 className="footer-h2">We. Are. OneStaff.</h2>

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import BlogCard from "./BlogCard";
+// import { BlogContext } from "../context/BlogContext";
 
 function Home() {
+	// const { blogPosts } = useContext(BlogContext);
 	return (
 		<>
 			<main>
@@ -28,7 +30,7 @@ function Home() {
 					<section className="travel-friends">
 						<div className="friends-col-1 flex column align-center">
 							<h3 className="mobile-headline">Travel with Your Friends</h3>
-							<img src="../../images/friends.webp" alt="Photo of friends." />
+							<img src="../../images/friends.webp" alt="Friends talking." />
 						</div>
 						<div className="friends-col-2">
 							<h3 className="desktop-headline">Travel with Your Friends</h3>
@@ -50,6 +52,9 @@ function Home() {
 						<h2>Check Out Our Blog</h2>
 					</div>
 					<div className="blog-row">
+						{/* {blogPosts.map((p, idx) => (
+							<BlogCard blogPost={p} key={idx} />
+						))} */}
 						{<BlogCard />}
 						{<BlogCard />}
 						{<BlogCard />}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import FeaturedImage from "./BlogElements/FeaturedImage";
 import Stars from "./BlogElements/Stars";
 import Headline from "./BlogElements/Headline";
@@ -7,8 +7,10 @@ import CommentsCounter from "./BlogElements/CommentsCounter";
 import AuthorImage from "./BlogElements/AuthorImage";
 import Byline from "./BlogElements/Byline";
 import Date from "./BlogElements/Date";
+import { BlogContext } from "../context/BlogContext";
 
 function BlogCard() {
+	const { setBlogPosts } = useContext(BlogContext);
 	return (
 		<article className="blog-card">
 			<div className="featured-image-container">

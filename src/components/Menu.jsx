@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
@@ -8,17 +9,20 @@ import { IconContext } from "react-icons";
 
 function Menu(props) {
 	const [isNavOpen, setIsNavOpen] = useState(false);
+	const navigate = useNavigate();
 	return (
 		<>
 			<header>
 				<nav className="header-nav flex center align-center space-between">
 					<div className="logo-container">
 						<picture>
-							<img
-								src="../../OSM-assets/WordmarkBlack.svg"
-								alt="OneStaff logo."
-								className="header-logo"
-							/>
+							<NavLink to="/home" className="header-search-icon">
+								<img
+									src="../../OSM-assets/WordmarkBlack.svg"
+									alt="OneStaff logo."
+									className="header-logo"
+								/>
+							</NavLink>
 						</picture>
 					</div>
 					<div className="top-menu-items-desktop flex center desktop">
@@ -67,7 +71,13 @@ function Menu(props) {
 						</ul>
 					</div>
 					{/* ---------- End mobile menu list items ----------------  */}
-					<button className="user-circle flex flex-end">
+					<button
+						className="user-circle flex flex-end"
+						onClick={(e) => {
+							e.preventDefault();
+							navigate("/manage");
+						}}
+					>
 						<IconContext.Provider
 							value={{
 								className: "user-icon",

@@ -6,7 +6,7 @@ function FeaturedImage() {
 			<picture className="featured-img-container">
 				<img
 					src="../../../images/three-margaritas.jpg"
-					alt="photo of margaritas"
+					alt="A variety of margaritas."
 					className="featured-image"
 				/>
 			</picture>

@@ -4,6 +4,7 @@ import TravelJobs from "./components/TravelJobs";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
 import BlogListPage from "./components/BlogListPage";
+import ManageBlog from "./components/ManageBlog";
 import Footer from "./components/Footer";
 import {
 	BrowserRouter as Router,
@@ -23,6 +24,7 @@ function App() {
 				<Route path="/benefits" element={<Benefits />}></Route>
 				<Route path="/about" element={<About />}></Route>
 				<Route path="/blogpage" element={<BlogListPage />}></Route>
+				<Route path="/manage" element={<ManageBlog />}></Route>
 				<Route path="*" element={<Navigate to="/home" />} />
 			</Routes>
 			<Footer />
