@@ -43,13 +43,17 @@ function Home() {
 						</div>
 					</section>
 				</section>
-				<section className="blog-row">
+				<section className="blog-section">
 					{/* Ideally, we dynamically map through and output three BlogCard components with the three latest blog
 					posts here. */}
 					<div className="flex center">
 						<h2>Check Out Our Blog</h2>
 					</div>
-					{<BlogCard />}
+					<div className="blog-row">
+						{<BlogCard />}
+						{<BlogCard />}
+						{<BlogCard />}
+					</div>
 				</section>
 			</main>
 		</>

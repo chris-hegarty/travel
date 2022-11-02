@@ -1,26 +1,36 @@
 import React from "react";
-import { FaRegEye } from "react-icons/fa";
-import { FiStar } from "react-icons/fi";
+import FeaturedImage from "./BlogElements/FeaturedImage";
+import Stars from "./BlogElements/Stars";
+import Headline from "./BlogElements/Headline";
+import ViewsCounter from "./BlogElements/ViewsCounter";
+import CommentsCounter from "./BlogElements/CommentsCounter";
+import AuthorImage from "./BlogElements/AuthorImage";
+import Byline from "./BlogElements/Byline";
+import Date from "./BlogElements/Date";
 
 function BlogCard() {
 	return (
-		<article>
-			<img src="" alt="" />
-			<div>
-				<span>{FiStar}</span>
-				<span>{FiStar}</span>
-				<span>{FiStar}</span>
-				<span>{FiStar}</span>
-				<span>{FiStar}</span>
-				<span></span>
+		<article className="blog-card">
+			<div className="featured-image-container">
+				<FeaturedImage />
 			</div>
-			<h4>Blog Title</h4>
-			{/* views, comments here  */}
-			<div className="author-component">
-				<img src="" alt="" />
-				<div>
-					<h5>By Author</h5>
-					<h5>Date</h5>
+			<div className="stars">
+				<Stars />
+			</div>
+			<h4>
+				<Headline />
+			</h4>
+			<div className="counters">
+				<ViewsCounter />
+				<CommentsCounter />
+			</div>
+			<div className="author-section">
+				<div className="author-image-container">
+					<AuthorImage />
+				</div>
+				<div className="author-date-stack">
+					<Byline />
+					<Date />
 				</div>
 			</div>
 		</article>
