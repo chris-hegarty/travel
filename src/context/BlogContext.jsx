@@ -1,6 +1,7 @@
 import React, { useState, createContext } from "react";
+import nextId from "react-id-generator";
 
-export const BlogContext = createContext(null);
+export const BlogContext = createContext();
 
 export function BlogProvider(props) {
 	const [blogPosts, setBlogPosts] = useState([]);
@@ -13,30 +14,45 @@ export function BlogProvider(props) {
 	const [date, setDate] = useState("");
 	const [authorImage, setAuthorImage] = useState(null);
 	const [byline, setByline] = useState("");
+	const [posts, setPosts] = useState([]);
 
-	function createPost(e) {
-		e.preventDefault();
-		let newPost = {
-			headline: headline,
-			date: date,
-			byline: byline,
-			blogImage: blogImage,
-			authorImage: authorImage,
-			rating: rating,
-			isStarClicked: isStarClicked,
-			viewsNumber: viewsNumber,
-			commentsNumber: commentsNumber,
-		};
-		setBlogPosts((curr) => [newPost, ...curr]);
+	const addPost = (
+		headline,
+		date,
+		byline,
+		rating,
+		isStarClicked,
+		viewsNumber,
+		commentsNumber,
+	) => {
+		setPosts([
+			...posts,
+			{
+				headline,
+				date,
+				byline,
+				rating,
+				isStarClicked,
+				viewsNumber,
+				commentsNumber,
+				id: nextId(),
+			},
+		]);
+	};
 
-		// After the function is called, reset the form values.
+	const removePost = (id) => {
+		setPosts(posts.filter((post) => post.id !== id));
+	};
 
+	const clearState = () => {
 		setHeadline("");
 		setDate("");
 		setByline("");
-		setBlogImage("");
-		setAuthorImage("");
-	}
+		setRating("");
+		setIsStarClicked("");
+		setViewsNumber("");
+		setCommentsNumber("");
+	};
 
 	return (
 		<BlogContext.Provider
@@ -61,10 +77,16 @@ export function BlogProvider(props) {
 				setAuthorImage,
 				byline,
 				setByline,
-				createPost,
+				posts,
+				setPosts,
+				addPost,
+				removePost,
+				clearState,
 			}}
 		>
 			{props.children}
 		</BlogContext.Provider>
 	);
 }
+
+// props.children refers to the children that the provider component wraps.

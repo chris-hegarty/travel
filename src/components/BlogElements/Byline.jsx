@@ -1,10 +1,10 @@
 import React from "react";
 
-function Byline() {
+function Byline({ byline }) {
 	return (
 		<div className="byline">
 			<p>By</p>
-			<p>Jane Do</p>
+			<p>{byline}</p>
 		</div>
 	);
 }

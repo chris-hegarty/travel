@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import BlogCard from "./BlogCard";
-// import { BlogContext } from "../context/BlogContext";
+import { BlogContext } from "../context/BlogContext";
 
-function Home() {
-	// const { blogPosts } = useContext(BlogContext);
+function Home(props) {
+	const { posts } = useContext(BlogContext);
 	return (
 		<>
 			<main>
@@ -52,12 +52,9 @@ function Home() {
 						<h2>Check Out Our Blog</h2>
 					</div>
 					<div className="blog-row">
-						{/* {blogPosts.map((p, idx) => (
-							<BlogCard blogPost={p} key={idx} />
-						))} */}
-						{<BlogCard />}
-						{<BlogCard />}
-						{<BlogCard />}
+						{posts.map((post, idx) => (
+							<BlogCard post={post} key={idx} headline={post.headline} />
+						))}
 					</div>
 				</section>
 			</main>

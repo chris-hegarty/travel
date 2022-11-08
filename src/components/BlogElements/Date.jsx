@@ -1,11 +1,11 @@
 import React from "react";
 import moment from "moment";
 
-function Date() {
-	const date = moment().format("d MMM YYYY");
+function Date({ date }) {
+	const blogDate = moment(date).format("d MMM YYYY");
 	return (
 		<div className="blog-date">
-			<p>{date}</p>
+			<p>{blogDate}</p>
 		</div>
 	);
 }

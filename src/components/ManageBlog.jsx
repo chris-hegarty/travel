@@ -1,27 +1,50 @@
+import { logDOM } from "@testing-library/react";
 import React, { useContext, useState } from "react";
 import { BlogContext } from "../context/BlogContext";
+import { BlogCard } from "./BlogCard";
 
-function CreateBlog() {
+function ManageBlog() {
 	const {
 		headline,
 		setHeadline,
 		date,
 		setDate,
-		authorImage,
-		setAuthorImage,
+		// authorImage,
+		// setAuthorImage,
 		byline,
 		setByline,
-		blogImage,
-		setBlogImage,
-		createPost,
+		// blogImage,
+		// setBlogImage,
+		// createPost,
+		blogPosts,
+		setBlogPosts,
+		isStarClicked,
+		setIsStarClicked,
+		rating,
+		setRating,
+		viewsNumber,
+		setViewsNumber,
+		commentsNumber,
+		setCommentsNumber,
+		posts,
+		setPosts,
+		addPost,
+		clearState,
+		// createPost,
 	} = useContext(BlogContext);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		addPost();
+	};
+
 	return (
 		<>
 			<div className="flex center">
 				<p>Create a Blog Post</p>
 			</div>
 			<section className="blog-form">
-				<form action="">
+				<form>
 					<div className="columns-wrap flex center">
 						<div className="left-column">
 							<div className="create-field flex column">
@@ -58,7 +81,7 @@ function CreateBlog() {
 								/>
 							</div>
 						</div>
-						<div className="right-column">
+						{/* <div className="right-column">
 							<div className="create-field flex column">
 								<label htmlFor="c-image">Featured Image:</label>
 								<input
@@ -93,16 +116,10 @@ function CreateBlog() {
 									Upload
 								</button>
 							</div>
-						</div>
+						</div> */}
 					</div>
 					<div className="publish create-field flex column">
-						<button
-							onClick={(e) => {
-								e.preventDefault();
-								createPost();
-							}}
-							type="submit"
-						>
+						<button type="submit" onClick={handleSubmit}>
 							PUBLISH
 						</button>
 					</div>
@@ -112,4 +129,4 @@ function CreateBlog() {
 	);
 }
 
-export default CreateBlog;
+export default ManageBlog;
